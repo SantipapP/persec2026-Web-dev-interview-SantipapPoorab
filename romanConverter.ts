@@ -8,7 +8,6 @@ const ROMAN_TABLE = [
     { value: 1, symbol: 'I' }
 ];
 
-// ฟังก์ชันแปลงเลข Int เป็น String โรมัน
 export function intToRoman(num: number): string {
     let result = "";
     let remaining = num;
@@ -21,7 +20,6 @@ export function intToRoman(num: number): string {
     return result;
 }
 
-// ฟังก์ชันแปลง String โรมัน เป็น Int
 export function romanToInt(s: string): number {
     const charMap: Record<string, number> = {
         'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000
